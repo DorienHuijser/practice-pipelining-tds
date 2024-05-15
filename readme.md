@@ -25,7 +25,7 @@ The main aim of this repository is to have a clean and basic structure, which ca
 - R and the following packages:
 
 ```
-install.packages(c("stargazer", "knitr", "data.table", "ggplot2"))
+install.packages(c("knitr", "data.table", "ggplot2"))
 ```
 
 Detailed installation instructions can be found here: [tilburgsciencehub.com/tutorial](http://tilburgsciencehub.com/tutorial)
@@ -39,3 +39,20 @@ The best way to get started is by following [our tutorial](http://tilburgscience
 - Tested on Mac and Windows 10
 
 - Many possible improvements remain. Comments and contributions are welcome!
+
+## Some notes from the tutorial
+
+Do a dry-run: make will give you the scripts that will be executed
+
+```
+make -n
+```
+
+Run a section in the makefile, for example
+
+```
+make wipe
+```
+
+`wipe` is specified in the makefile (in this case it executes a wipe.py script).
+
